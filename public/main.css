@@ -1,8 +1,26 @@
+body {
+  margin:0;
+ 
+}
+
 .container {
   min-height: 100vh;
-  background: #ccc;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
+  background:url('/img/slytherin-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleContainer {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+.buttonContainer {
+  text-align: center;
+  size: 2em;
 }
 
 .startButton {
