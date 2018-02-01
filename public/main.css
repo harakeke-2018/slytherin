@@ -18,6 +18,15 @@ body {
   font-size: 3em;
 }
 
+.middleContainer {
+  text-align: center;
+  color: white !important;
+  font-size: 2em;
+  background-color: rgba(1, 32, 30, 0.5);
+
+}
+
+
 .buttonContainer {
   text-align: center;
   size: 2em;
