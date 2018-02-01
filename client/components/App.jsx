@@ -6,7 +6,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 const App = () => {
   return (
     <Router>
-      <div className='container'>
+      <div>
         <Route exact path='/' component={Home}/>
         <Route path='/questions' component={Questions} />
       </div>
