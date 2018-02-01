@@ -1,0 +1,10 @@
+.container {
+  min-height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: row;
+}
+
+.startButton {
+ text-decoration: none; 
+}
