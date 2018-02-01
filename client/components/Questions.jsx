@@ -8,45 +8,30 @@ class Questions extends React.Component {
       score: 0,
       testQs: [
         {
-          question: 'Question 1',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
+          question: 'Who did Christmas better?',
+          btn1: {isTrue: false, text: 'Santa'},
+          btn2: {isTrue: true, text: 'Grinch'}
         },
         {
-          question: 'Question 2',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
+          question: 'Do you think you are brave?',
+          btn1: {isTrue: false, text: 'Yes'},
+          btn2: {isTrue: true, text: 'No'}
         },
         {
-          question: 'Question 3',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
+          question: 'What do you think of Voldemort?',
+          btn1: {isTrue: true, text: 'He is cool'},
+          btn2: {isTrue: false, text: 'He is evil'}
         },
         {
-          question: 'Question 4',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
-        },
-        {
-          question: 'Question 5',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
-        },
-        {
-          question: 'Question 6',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
-        },
-        {
-          question: 'Question 7',
-          btn1: {isTrue: true, text: 'hello'},
-          btn2: {isTrue: false, text: 'bye'}
+          question: 'Hogwarts is under attack, would you:',
+          btn1: {isTrue: true, text: 'Leave'},
+          btn2: {isTrue: true, text: 'Stay'}
         }
       ],
       currentQ: {
-        question: 'Question 0',
-        btn1: {isTrue: true, text: 'hello'},
-        btn2: {isTrue: false, text: 'bye'}
+        question: 'Whose child are you more proud to be?',
+        btn1: {isTrue: false, text: 'Mum'},
+        btn2: {isTrue: true, text: 'Dad'}
       }
     }
     this.updatePageandTotal = this.updatePageandTotal.bind(this)
@@ -58,6 +43,8 @@ class Questions extends React.Component {
         score: this.state.score + num,
         currentQ: this.state.testQs.shift()
       })
+    } else {
+      // pass score + num to next function
     }
   }
 
