@@ -61,8 +61,10 @@ class Questions extends React.Component {
       <div className='middleContainer'>
         <div className='content'>
           <h1>{this.state.currentQ.question}</h1>
-          <button type="button" onClick={() => this.updatePageandTotal(this.state.currentQ.btn1.isTrue)}>{this.state.currentQ.btn1.text}</button><br />
-          <button type="button" onClick={() => this.updatePageandTotal(this.state.currentQ.btn2.isTrue)}>{this.state.currentQ.btn2.text}</button>
+          <div className='buttonContainer'>
+            <button type="button" className="startButton" onClick={() => this.updatePageandTotal(this.state.currentQ.btn1.isTrue)}>{this.state.currentQ.btn1.text}</button>
+            <button type="button" className="startButton" onClick={() => this.updatePageandTotal(this.state.currentQ.btn2.isTrue)}>{this.state.currentQ.btn2.text}</button>
+          </div>
         </div>
       </div>
     )

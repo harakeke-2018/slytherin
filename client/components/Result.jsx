@@ -1,5 +1,6 @@
 import React from 'react'
 import Questions from './Questions'
+import {Route, Link} from 'react-router-dom'
 
 class Result extends React.Component {
   constructor (props) {
@@ -11,7 +12,6 @@ class Result extends React.Component {
 
   render () {
     const totalScore = Number(this.props.score)
-    // const totalScore = this.state.finalScore
     let resultImg = ''
     let resultMsg = ''
     if (totalScore >= 5) {
@@ -28,8 +28,11 @@ class Result extends React.Component {
         <div className='content'>
           <img src={resultImg} alt="result-image"/>
           <p>{resultMsg}</p>
+          <Link to='/' ><button className='startButton'>Re-Take Test</button></Link>
         </div>
-
+        <div>
+       
+        </div>
       </div>
     )
   }
