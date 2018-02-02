@@ -14,7 +14,7 @@ class Result extends React.Component {
     const totalScore = Number(this.props.score)
     let resultImg = ''
     let resultMsg = ''
-    if (totalScore >= 5) {
+    if (totalScore === 10) {
       resultImg = '/img/slytherin-win.gif'
       resultMsg = 'Congratulations! You are one of us.'
     } else {
