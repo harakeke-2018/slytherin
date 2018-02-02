@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Link, Redirect } from 'react-router-dom'
 
 class Questions extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       finished: false,
