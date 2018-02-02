@@ -3,7 +3,6 @@ import Home from './Home'
 import Questions from './Questions'
 import Result from './Result'
 import { HashRouter as Router, Route } from 'react-router-dom'
-import Result from './Result'
 
 class App extends React.Component {
   constructor (props) {
