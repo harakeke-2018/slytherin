@@ -25,14 +25,15 @@ class App extends React.Component {
         <div className='container'>
           <div className='titleContainer'>
             <h1>Are you a true Slytherin?</h1>
-            {/* <h1>{this.state.score}</h1> */}
           </div>
           <main>
             <Route exact path='/' component={Home} />
             <Route path='/questions' render={() => {
               return <Questions scoreGrab={this.scoreGrab} finalScore={this.state.score} />
             }} />
-            <Route path='/result' component={Result} />
+            <Route path='/result' render={() => {
+              return <Result score={this.state.score}/>
+            }} />
           </main>
         </div>
       </Router>
