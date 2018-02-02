@@ -12,10 +12,8 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div className='container'>
-        <div className='titleContainer'>
-          <h1>Are you a true Slytherin?</h1>
-        </div>
+      <div>
+        
         <div className='middleContainer'>
           <div className='content'>
             <p>So the sorting hat has assigned you to our prestigious house.</p>
@@ -24,7 +22,8 @@ class Home extends React.Component {
           </div>
         </div>
         <div className='buttonContainer'>
-          <Link to='/questions' ><button className='startButton'>Start Slytherin Test</button></Link>
+          {/* <Link to='/questions' ><button className='startButton'>Start Slytherin Test</button></Link> */}
+          <Link to='/result' ><button className='startButton'>Start Slytherin Test</button></Link>
         </div>
       </div>
     )

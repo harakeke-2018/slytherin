@@ -23,7 +23,6 @@ body {
   color: white !important;
   font-size: 2em;
   background-color: rgba(1, 32, 30, 0.5);
-
 }
 
 
@@ -34,4 +33,17 @@ body {
 
 .startButton {
  text-decoration: none; 
+ font-size: 2em;
 }
+
+/* .resultImg {
+  text-align: center;
+  display: flex;
+}
+
+.resultMsg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5em;
+} */
