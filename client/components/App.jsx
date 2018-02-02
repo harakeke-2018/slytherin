@@ -1,11 +1,22 @@
 import React from 'react'
 import Home from './Home'
 import Questions from './Questions'
+import Result from './Result'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
 class App extends React.Component {
   constructor (props) {
     super(props)
+    this.state = {
+      score: 0
+    }
+    this.scoreGrab = this.scoreGrab.bind(this)
+  }
+
+  scoreGrab (num) {
+    this.setState({
+      score: num
+    })
   }
 
   render () {
@@ -17,12 +28,18 @@ class App extends React.Component {
           </div>
           <main>
             <Route exact path='/' component={Home} />
-            <Route path='/questions' component={Questions} />
+            <Route path='/questions' render={() => {
+              return <Questions scoreGrab={this.scoreGrab} finalScore={this.state.score} />
+            }} />
+            <Route path='/result' render={() => {
+              return <Result score={this.state.score}/>
+            }} />
           </main>
         </div>
       </Router>
     )
   }
+
 }
 
 export default App
