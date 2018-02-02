@@ -6,7 +6,7 @@ class Result extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-
+      // score: this.props.score
     }
   }
 
@@ -24,17 +24,14 @@ class Result extends React.Component {
 
     return (
 
-      <div className='resultContainer'>
-
-        <div className='resultImg'>
+      <div className='middleContainer'>
+        <div className='content'>
           <img src={resultImg} alt="result-image"/>
-        </div>
-        
-        <div className='middleContainer'>
           <p>{resultMsg}</p>
+          <Link to='/' ><button className='startButton'>Re-Take Test</button></Link>
         </div>
         <div>
-        <Link to='/' ><button className='startButton'>Re-Take Test</button></Link>
+       
         </div>
       </div>
     )
