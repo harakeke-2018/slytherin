@@ -10,8 +10,8 @@ class Questions extends React.Component {
       testQs: [
         {
           question: 'What do you think of Muggles? (They call themselves humans)',
-          btn1: { isTrue: false, text: 'I\'m gonna vomit thinking about them' },
-          btn2: { isTrue: true, text: 'I love mudbloods' }
+          btn1: { isTrue: true, text: 'I\'m gonna vomit thinking about them' },
+          btn2: { isTrue: false, text: 'I love mudbloods' }
         },
         {
           question: 'What is (or would be) your best class at Hogwarts?',
