@@ -5,16 +5,16 @@ class Result extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-
+      // score: this.props.score
     }
   }
 
   render () {
-    // const totalScore = Number(this.props.scores)
-    const totalScore = 5
+    const totalScore = Number(this.props.score)
+    // const totalScore = this.state.finalScore
     let resultImg = ''
     let resultMsg = ''
-    if (totalScore === 5) {
+    if (totalScore >= 5) {
       resultImg = '/img/slytherin-win.gif'
       resultMsg = 'Congratulations! You are one of us.'
     } else {
@@ -24,11 +24,9 @@ class Result extends React.Component {
 
     return (
 
-      <div className='container'>
-        <div className='resultImg'>
+      <div className='middleContainer'>
+        <div className='content'>
           <img src={resultImg} alt="result-image"/>
-        </div>
-        <div className='middleContainer'>
           <p>{resultMsg}</p>
         </div>
 

@@ -19,12 +19,20 @@ body {
 }
 
 .middleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: white !important;
   font-size: 2em;
-  background-color: rgba(1, 32, 30, 0.5);
+  
 }
 
+.content {
+  background-color: rgba(1, 32, 30, 0.7);
+  width: 60%;
+  padding: 2% 2%;
+}
 
 .buttonContainer {
   text-align: center;
