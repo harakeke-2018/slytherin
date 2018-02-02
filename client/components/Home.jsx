@@ -22,8 +22,8 @@ class Home extends React.Component {
           </div>
         </div>
         <div className='buttonContainer'>
-          {/* <Link to='/questions' ><button className='startButton'>Start Slytherin Test</button></Link> */}
-          <Link to='/result' ><button className='startButton'>Start Slytherin Test</button></Link>
+          <Link to='/questions' ><button className='startButton'>Start Slytherin Test</button></Link>
+          
         </div>
       </div>
     )
