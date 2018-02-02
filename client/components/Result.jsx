@@ -1,5 +1,6 @@
 import React from 'react'
 import Questions from './Questions'
+import {Route, Link} from 'react-router-dom'
 
 class Result extends React.Component {
   constructor (props) {
@@ -10,8 +11,7 @@ class Result extends React.Component {
   }
 
   render () {
-    // const totalScore = Number(this.props.scores)
-    const totalScore = 5
+    const totalScore = Number(this.props.score)
     let resultImg = ''
     let resultMsg = ''
     if (totalScore === 5) {
@@ -24,14 +24,18 @@ class Result extends React.Component {
 
     return (
 
-      <div className='container'>
+      <div className='resultContainer'>
+
         <div className='resultImg'>
           <img src={resultImg} alt="result-image"/>
         </div>
+        
         <div className='middleContainer'>
           <p>{resultMsg}</p>
         </div>
-
+        <div>
+        <Link to='/' ><button className='startButton'>Re-Take Test</button></Link>
+        </div>
       </div>
     )
   }

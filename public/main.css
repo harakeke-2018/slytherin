@@ -18,6 +18,12 @@ body {
   font-size: 3em;
 }
 
+.resultContainer{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .middleContainer {
   text-align: center;
   color: white !important;
